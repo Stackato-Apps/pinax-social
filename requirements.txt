@@ -1,0 +1,7 @@
+# Top-level requirements for Stackto; just links to the real one.
+# nopypm -- force use of pip, as some older versions are not in PyPM.
+
+--requirement=requirements/base.txt
+
+PIL
+mysql-python
