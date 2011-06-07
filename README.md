@@ -1,5 +1,10 @@
 # Pinax kitchensink demo
 
+Pinax is an open-source platform built on the Django Web Framework. It
+provides numerous reusable Django apps, starter projects and
+infrastructure tools. pinax-social, a social networking site, is its
+kitchensink demo demonstrating many of Pinax's features.
+
 ## Local development
 
     pypm install mysql-python
