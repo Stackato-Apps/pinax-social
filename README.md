@@ -16,7 +16,7 @@ infrastructure tools. pinax-social, a social networking site, is its
 
     stackato push pinax-social
     # Note: add a MySQL service
-    stackato run "python manage.py syncdb --noinput"
+    stackato run python manage.py syncdb --noinput
 
 ### Limitations
 
