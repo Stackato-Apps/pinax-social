@@ -32,7 +32,22 @@ for further details. Then deploy your app,
 
     stackato push pinax-social
     # Note: add a MySQL service
-    stackato run python manage.py syncdb --noinput
+    stackato run pinax-social python manage.py syncdb --noinput
+
+### Setup cron job for sending emails
+
+Run the following command as a cron job on your own server. You may
+also run them manually.
+
+    stackato run pinax-social python manage.py send_mail
+    stackato run pinax-social python manage.py emit_notices
+
+See the pinax documentation on [sending mail and
+notices](http://pinaxproject.com/docs/dev/deployment/#sending-mail-and-notices).
+
+Email notifications will contain URLs with ``example.com`` as the
+domain unless it is changed in fixtures/initial_data.json prior to
+deployment or later in django admin.
 
 ### Limitations
 
