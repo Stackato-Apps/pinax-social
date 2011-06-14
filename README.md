@@ -45,15 +45,16 @@ also run them manually.
 See the pinax documentation on [sending mail and
 notices](http://pinaxproject.com/docs/dev/deployment/#sending-mail-and-notices).
 
-Email notifications will contain URLs with ``example.com`` as the
+Email notifications will contain URLs with ``pinax-social.stackato.local`` as the
 domain unless it is changed in fixtures/initial_data.json prior to
 deployment or later in django admin.
 
 ### Limitations
 
 * PyPM does not have certain packages (eg: PIL) or their older
-versions, so pip is used (note: ``nopypm`` marker in requirements.txt)
-to install most packages.
+  versions, so pip is used (note: ``nopypm`` marker in
+  requirements.txt) to install most packages.
 
-* Known bug: the stackato client returns immediately, while the app is still
-  being staged. 
+* Since it takes several minutes (~6) for pip to install all the
+  dependencies, `stackato push` (and `stackato update`) too will take
+  several minutes to complete.
