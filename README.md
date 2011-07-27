@@ -7,8 +7,8 @@ infrastructure tools. pinax-social, a social networking site, is its
 
 ## Local development
 
-    pypm install mysql-python
-    pip install --user -r requirements.txt
+    pypm install -r requirements.txt
+    pip install --user -r requirements.pip
     python manage.py syncdb
     python manager.py runserver
 

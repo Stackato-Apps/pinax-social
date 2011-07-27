@@ -3,6 +3,6 @@
 --requirement=requirements/base.txt
 
 PIL
-mysql-python
+
 
 
