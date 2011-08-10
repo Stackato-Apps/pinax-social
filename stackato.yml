@@ -1,0 +1,4 @@
+name: pinax-social
+
+services:
+  mysql: mysql-pinax
