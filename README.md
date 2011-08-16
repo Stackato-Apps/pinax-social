@@ -30,8 +30,7 @@ See the [Django
 documentation](https://docs.djangoproject.com/en/dev/topics/email/#smtp-backend)
 for further details. Then deploy your app,
 
-    stackato push pinax-social
-    # Note: add a MySQL service
+    stackato push -n
     stackato run pinax-social python manage.py syncdb --noinput
 
 ### Setup cron job for sending emails
