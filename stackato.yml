@@ -1,4 +1,7 @@
 name: pinax-social
 
+hooks:
+  post-staging: python manage.py syncdb --noinput
+
 services:
   mysql: mysql-pinax
