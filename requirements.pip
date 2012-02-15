@@ -1,8 +1,0 @@
-# Top-level requirements for Stackto; just links to the real one.
-
---requirement=requirements/base.txt
-
-PIL
-
-
-

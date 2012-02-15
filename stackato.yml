@@ -3,5 +3,14 @@ name: pinax-social
 hooks:
   post-staging: python manage.py syncdb --noinput
 
+requirements:
+  pypm:
+    - mysql-python
+    - elementtree
+
 services:
   mysql: mysql-pinax
+
+min_version:
+  server: 0.9.0.143
+
