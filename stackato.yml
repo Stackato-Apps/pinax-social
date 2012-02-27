@@ -10,7 +10,3 @@ requirements:
 
 services:
   mysql: mysql-pinax
-
-min_version:
-  server: 0.9.0.143
-
