@@ -33,7 +33,7 @@ if 'VCAP_SERVICES' in os.environ:
     import json
     vcap_services = json.loads(os.environ['VCAP_SERVICES'])
     # XXX: avoid hardcoding here
-    mysql_srv = vcap_services['mysql-5.5'][0]
+    mysql_srv = vcap_services['mysql'][0]
     cred = mysql_srv['credentials']
     DATABASES = {
         'default': {
