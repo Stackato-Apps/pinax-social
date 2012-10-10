@@ -125,6 +125,7 @@ MIDDLEWARE_CLASSES = [
     "django_sorting.middleware.SortingMiddleware",
     "pinax.middleware.security.HideSensistiveFieldsMiddleware",
     "debug_toolbar.middleware.DebugToolbarMiddleware",
+    'django.middleware.http.ConditionalGetMiddleware',
 ]
 
 ROOT_URLCONF = "urls"
