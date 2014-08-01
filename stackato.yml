@@ -1,8 +1,0 @@
-name: pinax-social
-hooks:
-  post-staging: python manage.py syncdb --noinput
-min_version:
-  client: 1.4.3
-services:
-  ${name}-db: mysql
-timeout: 180

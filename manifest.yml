@@ -1,0 +1,12 @@
+applications:
+- name: pinax-social
+  services:
+    ${name}-db:
+      type: mysql
+  stackato:
+    hooks:
+      post-staging:
+      - python manage.py syncdb --noinput
+    min_version:
+      client: 1.4.3
+  timeout: 180
