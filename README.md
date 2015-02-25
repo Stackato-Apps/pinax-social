@@ -49,9 +49,5 @@ deployment or later in django admin.
 
 ### Limitations
 
-* PyPM does not have certain packages (eg: PIL) or their older versions, so pip
-  is used (note: requirements.pip vs requirements.txt) to install most
-  packages.
-
 * Since it takes several minutes for pip to install all the dependencies,
   `stackato push` (not `stackato update`) may take a few minutes to complete.
