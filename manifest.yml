@@ -1,12 +1,10 @@
 applications:
 - name: pinax-social
+  docker_image: stackatoapps/pinax-social:latest
   services:
     ${name}-db:
       type: mysql
   stackato:
-    hooks:
-      post-staging:
-      - python manage.py syncdb --noinput
     min_version:
       client: 1.4.3
   timeout: 180
