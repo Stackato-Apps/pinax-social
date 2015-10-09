@@ -46,8 +46,3 @@ notices](http://pinaxproject.com/docs/dev/deployment/#sending-mail-and-notices).
 Email notifications will contain URLs with ``pinax-social.stackato.local`` as the
 domain unless it is changed in fixtures/initial_data.json prior to
 deployment or later in django admin.
-
-### Limitations
-
-* Since it takes several minutes for pip to install all the dependencies,
-  `stackato push` (not `stackato update`) may take a few minutes to complete.
