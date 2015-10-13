@@ -3,7 +3,7 @@
         "pk": 1, 
         "model": "sites.site", 
         "fields": {
-            "domain": "pinax-social.stackato.local", 
+            "domain": "pinax-social.stackato.local",
             "name": "Pinax Social Demo"
         }
     }

@@ -12,7 +12,7 @@ infrastructure tools. pinax-social, a social networking site, is its
     python manage.py syncdb
     python manager.py runserver
 
-## Deploying to Stackato
+## Deploying to HPE Helion Stackato
 
 Optionally, if you want the app to be able to send emails
 successfully, specify the mail server settings in your Django
