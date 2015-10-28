@@ -1,5 +1,6 @@
 applications:
 - name: pinax-social
+  memory: 128M
   services:
     ${name}-db:
       type: mysql
