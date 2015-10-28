@@ -1,6 +1,7 @@
 applications:
 - name: pinax-social
   docker_image: stackatoapps/pinax-social:latest
+  memory: 128M
   services:
     ${name}-db:
       type: mysql
