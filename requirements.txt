@@ -1,3 +1,4 @@
 # extra dependencies to be installed by pip
 --requirement=requirements/base.txt
 mysql-python
+six
