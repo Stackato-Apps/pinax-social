@@ -32,9 +32,8 @@ MANAGERS = ADMINS
 if 'VCAP_SERVICES' in os.environ:
     import json
     vcap_services = json.loads(os.environ['VCAP_SERVICES'])
-    # XXX: avoid hardcoding here
-    mysql_srv = vcap_services['mysql'][0]
-    cred = mysql_srv['credentials']
+    service_name = vcap_services.keys()[0]
+    cred = vcap_services[service_name][0]['credentials']
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
